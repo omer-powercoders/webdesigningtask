@@ -1,3 +1,6 @@
+/*Should I add my github and linkedln links with icons to footer?*/
+/*I could not a solution about line 174.I dont want to give height because I want to see original version of images. But it is very ugly without height*/
+
 *{
     box-sizing: border-box;
 }
@@ -7,6 +10,7 @@ body {
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+/* Background photo*/
 .backgroundimg {
     min-height: 100%;
     min-width: 1024px;
@@ -16,7 +20,9 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
+    opacity: 0.7;
 }
+/* Top bar*/
 #social{
     background-color: black;
     color: white;
@@ -51,3 +57,213 @@ span{
     transition: 400ms ;
     background-color: black;
 }
+
+#container{
+  width:80%;
+  margin: auto;
+  height: auto;
+  
+}
+
+header{
+  width: 100%;
+  height: 250px;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  margin-bottom: 5px;
+
+}
+
+#header-image{
+  width: 100%;
+  height: 250px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
+ 
+
+}
+
+#centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  
+}
+
+section{
+  width: 100%;
+  height: auto;
+  background-color: #f1f1f1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 15px;
+  overflow: auto;
+}
+
+nav{
+  width: 20%;
+  float: left;
+  margin-top: 10px;
+  height: auto;
+
+}
+
+nav ul{
+  width: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav li{
+  list-style-type: none;
+
+}
+
+nav li a{
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #b4b4b4;
+  padding-left: 20px;
+  display: block;
+
+}
+
+nav li a:hover{
+  color: white;
+  background-color: #adadad;
+
+}
+ i{
+   margin-right: 10px;
+ }
+
+ main{
+   float: left;
+   height: auto;
+   width: 80%;
+   padding: 10px;
+
+ }
+
+ #content{
+   width: 46%;
+   height: auto;
+   display: inline-block;
+   margin-right: 15px;
+   border-radius: 10px;
+   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
+   margin-bottom: 15px;
+
+
+ }
+/*  ★ ★ ★I can not describe height: auto; for .infimg ★ ★ ★*/
+ .infimg{
+   width: 100%;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   transition: opacity 600ms;
+   height: 240px;
+
+ }
+
+ h5{
+   margin: 10px;
+   color: dimgray;
+ }
+
+ .context{
+   margin: 10px;
+   color: dimgray;
+ }
+
+ .btnread:link{
+   display: block;
+   width: 150px;
+   height: 45px;
+   padding: 10px 20px;
+   background-color: rgba(0, 0, 255, 0.397);
+   color: white;
+   text-decoration: none;
+   margin: 15px;
+   border-radius: 10px;
+ 
+ }
+
+ .btnread:hover{
+   opacity: 0.8;
+ }
+
+ .infimg:hover{
+   opacity: 0.5;
+ }
+
+ footer{
+   width: 100%;
+   height: 75px;
+   background-color: black;
+   color:white;
+   font-family: 'Caveat', cursive;
+   line-height: 75px;
+   text-align: center;
+   opacity: 0.7;
+   font-size: 20px;
+   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
+   
+ }
+
+ h1{
+   text-align: center;
+   background-color: black;
+   color: white;
+   height: 50px;
+   line-height: 50px;
+   margin: 0 10px;
+   border-radius: 10px;
+   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
+   opacity: 0.8;
+ }
+
+ .teams{
+   width: 47.3%;
+   height: 300px;
+   background-color: #f1f1f1;
+   float: left;
+   margin: 10px;
+   border-radius: 5px;
+   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
+ }
+
+ .teamsimg{
+   width: 100%;
+   height: 250px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   transition: opacity 600ms;
+
+ }
+
+ .teamnames{
+   font-size: 20px;
+   display: inline-block;
+   margin: 0px;
+   color: black;
+   text-align: center;
+   height: 47px;
+   line-height: 45px;
+   width: 100%;
+   margin-top: -5px;
+ }
+
+ .teamsimg:hover{
+   opacity: 0.5;
+ }
