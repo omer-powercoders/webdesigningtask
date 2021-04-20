@@ -10,10 +10,10 @@ body {
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
 /* Background photo*/
 .backgroundimg {
     min-height: 100%;
-    min-width: 1024px;
     width: 100%;
     height: auto;
     position: fixed;
@@ -27,70 +27,71 @@ body {
     background-color: black;
     color: white;
     width: 100%;
-    height: 55px;
+    max-width: 1300px;
+    height: 3.438rem;
     position: sticky;
     top: 0;
     z-index: 1;
-    font-size: 22px;
+    font-size: 1.375rem;
     text-align: right;
-    padding: 15px;
+    padding: 0.938rem;
     font-family: 'Caveat', cursive;
-    opacity: 0.7;
-    
+    opacity: 0.7;    
 }
-
+/* Club name */
 .font{
     float: left;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
     margin: 0;
     padding: 0;
 }
+/* Definition of the website*/
 span{
-    font-size: 16px;
-    letter-spacing: 1px;
+    font-size: 1rem;
+    letter-spacing: 0.063rem;
 }
-
-.social>a{
-    margin-right: 15px;
+/* Edit the all a selectors inside of social class*/
+.social a{
+    margin-right: 0.938rem;
     color: white;
     
 }
-.social>a:hover{
+/* Edit the a selectors inside of the social class when on hover*/
+.social a:hover{
     transition: opacity 300ms;
     opacity: 0.5;
     background-color: black;
 }
-
+/* Edit div tag which has id container*/
 #container{
-  width:80%;
+  width:85%;
   margin: auto;
-  height: auto;
-  
+  height: auto;  
 }
-
+/* Edit logo, slogan and background photo of them*/
 header{
   width: 100%;
-  height: 250px;
-  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  height: 15.625rem;
+  box-shadow: 0 0.125rem 0.5rem 0.125rem rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
   position: relative;
-  margin-bottom: 5px;
+  margin-bottom: 0.313rem;
 
 }
-
+/* Edit background photo of logo*/
 #header-image{
   width: 100%;
-  height: 250px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10p
+  height: 15.625rem;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
 }
-
+/* Edit slogan of header which under the logo*/
 .header-text{
   text-align: center;
-  margin: -50px;
+  margin: -3.125rem;
   font-family: 'Caveat', cursive;
-  font-size: 30px;
+  font-size: 1.875rem;
   color: white;
 }
 
@@ -105,17 +106,17 @@ section{
   width: 100%;
   height: auto;
   background-color: #f1f1f1;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
-  margin-top: 15px;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  box-shadow: 0 0.125rem 0.5rem 0.125rem rgba(0, 0, 0, 0.5);
+  margin-top: 0.938rem;
   overflow: auto;
 }
 
 nav{
   width: 20%;
   float: left;
-  margin-top: 10px;
+  margin-top: 0.625rem;
   height: auto;
 
 }
@@ -134,12 +135,12 @@ nav li{
 }
 
 nav li a{
-  height: 50px;
-  line-height: 50px;
+  height: 3.125rem;
+  line-height: 3.125rem;
   text-decoration: none;
   color: black;
-  border-bottom: 1px solid #b4b4b4;
-  padding-left: 20px;
+  border-bottom: 0.063rem solid #b4b4b4;
+  padding-left: 1.25rem;
   display: block;
 
 }
@@ -150,59 +151,58 @@ nav li a:hover{
 
 }
  i{
-   margin-right: 10px;
+   margin-right: 0.625rem;
  }
 
- main{
+ article{
    float: left;
    height: auto;
    width: 80%;
-   padding: 10px;
-
+   padding: 0.625rem; 
+   
  }
 
- #content{
+ .content{
    width: 46%;
    height: auto;
    display: inline-block;
-   margin-right: 15px;
+   margin-right: 0.938rem;
    border-radius: 10px;
-   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
-   margin-bottom: 15px;
+   box-shadow: 0 0.125rem 0.5rem 0.125rem rgba(0, 0, 0, 0.5);
+   margin-bottom: 0.938rem;
 
 
  }
 /*  ★ ★ ★I can not describe height: auto; for .infimg ★ ★ ★*/
  .infimg{
    width: 100%;
-   border-top-left-radius: 10px;
-   border-top-right-radius: 10px;
+   border-bottom-left-radius: 0.625rem;
+   border-bottom-right-radius: 0.625rem;
    transition: opacity 600ms;
-   height: 240px;
+   height: 15rem;
 
  }
 
  h5{
-   margin: 10px;
+   margin: 0.625rem;
    color: dimgray;
  }
 
  .context{
-   margin: 10px;
+   margin:  0.625rem;
    color: dimgray;
  }
 
  .btnread:link{
    display: block;
-   width: 150px;
-   height: 45px;
-   padding: 10px 20px;
+   width: 9.375rem;
+   height:2.813rem;
+   padding: 0.625rem 1.25rem;
    background-color: rgba(0, 0, 255, 0.397);
    color: white;
    text-decoration: none;
-   margin: 15px;
-   border-radius: 10px;
- 
+   margin: 0.938rem;
+   border-radius: 0.625rem;
  }
 
  .btnread:hover{
@@ -215,14 +215,14 @@ nav li a:hover{
 
  footer{
    width: 100%;
-   height: 75px;
+   height: 4.688rem;
    background-color: black;
    font-family: 'Caveat', cursive;
-   line-height: 75px;
+   line-height: 4.688rem;
    text-align: center;
    opacity: 0.7;
-   font-size: 20px;
-   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
+   font-size: 1.25rem;
+   box-shadow: 0 0.125rem 0.5rem 0.125rem rgba(0, 0, 0, 0.5);
    
  }
 
@@ -240,43 +240,43 @@ nav li a:hover{
    text-align: center;
    background-color: black;
    color: white;
-   height: 50px;
-   line-height: 50px;
-   margin: 0 10px;
-   border-radius: 10px;
-   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
+   height: 3.125rem;
+   line-height: 3.125rem;
+   margin: 0 0.625rem;
+   border-radius: 0.625rem;
+   box-shadow: 0 0.125rem 0.5rem 0.125rem rgba(0, 0, 0, 0.5);
    opacity: 0.8;
  }
 
  .teams{
    width: 47.3%;
-   height: 300px;
+   height: 18.75rem;
    background-color: #f1f1f1;
    float: left;
-   margin: 10px;
-   border-radius: 5px;
-   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
+   margin: 0.625rem;
+   border-radius: 0.313rem;
+   box-shadow: 0 0.125rem 0.5rem 0.125rem rgba(0, 0, 0, 0.5);
  }
 
  .teamsimg{
    width: 100%;
-   height: 250px;
-   border-top-left-radius: 5px;
-   border-top-right-radius: 5px;
+   height: 15.625rem;
+   border-top-left-radius: 0.313rem;
+   border-top-right-radius: 0.313rem;
    transition: opacity 600ms;
 
  }
 
  .teamnames{
-   font-size: 20px;
+   font-size: 1.25rem;
    display: inline-block;
-   margin: 0px;
+   margin: 0;
    color: black;
    text-align: center;
-   height: 47px;
-   line-height: 45px;
+   height: 2.938rem;
+   line-height: 2.813rem;
    width: 100%;
-   margin-top: -5px;
+   margin-top: -0.313rem;
  }
 
  .teamsimg:hover{
@@ -284,61 +284,166 @@ nav li a:hover{
  }
 
  .society-text{
-   float: left;
-   font-size: 18px;
+   float: right;
+   font-size: 1.125rem;
    width: 45%;
    height: auto;
-   margin-left: 15px;
+   margin-right: 0.938rem;
   
  }
  .society{
-   float: right;
-   border-radius: 5px;
+   float: left;
+   border-radius: 0.313rem;
    width: 45%;
-   margin: 20px 15px 20px 20px;
+   margin: 1.25rem  0.938rem 1.25rem 1.25rem;
    height: auto;
  }
 
  .galeryimg{
    width: 30%;
-   height: 200px;
-   border-radius: 5px;
+   height: 12.5rem;
+   border-radius: 0.313rem;
    opacity: 0.6;
    transition: all 600ms;
-   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
-   margin: 10px;
+   box-shadow: 0 0.125rem 0.5rem 0.125rem rgba(0, 0, 0, 0.5);
+   margin: 0.625rem;
    object-fit: cover;
  }
 
  .galeryimg:hover{
    opacity: 1;
-   border: 5px solid white; 
+   border: 0.313rem solid white; 
    cursor: pointer;
  }
 
  iframe{
    width: 46.5%;
-   height: 250px;
-   border-radius: 5px;
+   height: 15.625rem;
+   border-radius: 0.313rem;
    float: left;
-   margin: 20px 0 20px 15px;
-   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
+   margin: 1.25rem 0 1.25rem 0.938rem;
+   box-shadow: 0 0.125rem 0.5rem 0.125rem rgba(0, 0, 0, 0.5);
  }
+ 
 
  .address{
 
    width: 46.5%;
-   height: 250px;
+   height: 15.625rem;
    float: right;
-   margin: 20px 15px 0 0;
+   margin: 1.25rem 0.938rem 0 0;
    background-color: #f2f2f2;
-   padding: 5px 10px 10px 10px;
-   border-radius: 5px;
-    text-align: center;
+   padding: 0.313rem 0.625rem 0.625rem 0.625rem;
+   border-radius: 0.313rem;
+   text-align: center;
+
  }
 
+ .addresstitle{
+   font-weight: bold;
+   font-size: 20px;
+ }
+
+ .addresssubtitle{
+   font-weight: bold;
+   font-size: 18px;
+ }
 
 .addressmail{
   text-decoration: none;
   color: black;
 }
+
+@media screen and (max-width: 768px) {
+ 
+
+ .address{
+   width: 100%;
+   margin: 10px auto;
+ }
+ iframe{
+   width: 100%;
+   margin: 10px auto;
+ }
+ nav{
+   width: 100%;
+   margin-bottom: 10px;
+ }
+ article{
+   margin-left: 30px;
+ }
+ .social{
+   display: inline-flex;
+   height: auto;
+ }
+  .social a{
+    margin: auto 5px;
+  }
+ .galeryimg{
+   margin:15px auto;
+   display: block;
+   min-width: 100%;
+   height: auto;
+   opacity: 1;
+ }
+
+ article{
+   min-width: 100%;
+   margin: auto;
+ }
+ 
+ article h1{
+   min-width: 100%;
+   margin: 15px auto;
+ }
+.teams{
+   margin:15px auto;
+   display: block;
+   min-width: 100%;
+   height: auto;
+}
+.teams img{
+  object-fit: contain;
+  height: auto;
+}
+.society{
+  min-width: 100%;
+  height: auto;
+  margin: auto;
+}
+.society-text{
+  min-width: 100%;
+  height: auto;
+  margin: 3px 3px 15px 3px;
+}
+
+#container{
+  width: 90%;
+  margin: auto;
+  
+}
+
+.content{
+  margin:15px auto;
+   display: block;
+   min-width: 100%;
+   height: auto;
+   object-fit: contain;
+}
+.content a{
+ margin: 2px auto;
+ height: auto;
+ 
+}
+.btnread:link{
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
+}
+}
+
+
+
+
+ 
