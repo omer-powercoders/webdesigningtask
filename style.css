@@ -228,6 +228,7 @@ nav li a:hover{
   border-top-left-radius: 0.313rem;
   border-top-right-radius: 0.313rem;
   transition: opacity 600ms;
+  cursor: pointer;
  }
  .teamnames{
   font-size: 1.25rem;
@@ -255,15 +256,21 @@ nav li a:hover{
   height: auto;
  }
 
+.gallerycontainer{
+  display: inline-block;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  column-count: 3;
+  padding: 10px;
+}
  .galeryimg{
-  display: flex;
-  height: 12.5rem;
+  max-width: 100%;
+  margin: 5px auto;
   border-radius: 0.313rem;
   opacity: 0.6;
   transition: all 600ms;
   box-shadow: 0 0.125rem 0.5rem 0.125rem rgba(0, 0, 0, 0.5);
-  margin: 0.625rem;
-  object-fit: cover;
  }
  .galeryimg:hover{
   opacity: 1;
@@ -386,13 +393,6 @@ nav li a:hover{
  .social a{
   margin: auto 5px; 
   }
- .galeryimg{
-  width: 95%;
-  margin: 1%;
-  height: 12.5rem;
-  opacity: 1;
-  object-fit: cover;
- } 
  article h1{
   margin: 0 auto;
  }
@@ -427,6 +427,12 @@ nav li a:hover{
   margin: 2px auto;
   height: auto;
 }
+ .galeryimg{
+  opacity: 1;
+ }
+ .gallerycontainer{
+   column-count: 1;
+ }
 #firstlogo{
   display: none;
 }
@@ -456,12 +462,11 @@ nav{
   article h1{
   margin: 0 auto;
  }
-.galeryimg{
-  flex: 95%;
-  margin: 0.625rem;
-  height: 12.5rem;
+ .galeryimg{
   opacity: 1;
-  object-fit: cover;
+ }
+ .gallerycontainer{
+   column-count: 2;
  }
  .teams{ 
   flex: 44%;
