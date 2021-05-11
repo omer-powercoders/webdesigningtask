@@ -157,6 +157,7 @@ nav li a:hover{
   border-bottom-right-radius: 0.625rem;
   transition: opacity 600ms;
   height: 15rem;
+  cursor: pointer;
  }
  h5{
   margin: 0.625rem;
@@ -399,11 +400,7 @@ nav li a:hover{
 .teams{
   min-width: 90%;
   flex: 90%;
-  margin:2% 1%;
-}
-.teams img{
-  object-fit: contain;
-  height: auto;   
+  margin:2%;
 }
 .society{
   min-width: 90%;
@@ -415,6 +412,9 @@ nav li a:hover{
   flex: 90%;
   min-width: 90%;
 }
+ .infimg{
+   opacity: 1;
+ }
 #container{
   width: 90%;
   margin: auto;  
@@ -467,6 +467,9 @@ nav{
  }
  .gallerycontainer{
    column-count: 2;
+ }
+ .infimg{
+   opacity: 1;
  }
  .teams{ 
   flex: 44%;
