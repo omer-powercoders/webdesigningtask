@@ -1,4 +1,8 @@
-*{
+/*Desktop screens*/
+*, *::after, *::before{
+  box-sizing: inherit;
+}
+html,body{
   box-sizing: border-box;
 }
 body {
@@ -20,9 +24,9 @@ body {
   background-color: black;
   color: white;
   width: 100%;
-  max-width: 1700px;
   height: 3.438rem;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   z-index: 1;
   font-size: 1.375rem;
@@ -55,7 +59,7 @@ span{
 }
 .social a{
   margin-right: 0.938rem;
-  color: white;   
+  color: white;  
 }
 .social a:hover{
   transition: opacity 300ms;
@@ -94,6 +98,7 @@ header{
   top: 45%;
   left: 50%;
   transform: translate(-50%,-50%);
+  cursor: pointer;
 }
 section{
   width: 100%;
@@ -153,12 +158,14 @@ nav li a:hover{
  }
  .infimg{
   width: 100%;
-  border-bottom-left-radius: 0.625rem;
-  border-bottom-right-radius: 0.625rem;
+  height: auto;
+  margin: 0 auto;
   transition: opacity 600ms;
-  height: 15rem;
+  display: block;
   cursor: pointer;
+  object-fit: contain;
  }
+
  h5{
   margin: 0.625rem;
   color: dimgray;
@@ -224,12 +231,15 @@ nav li a:hover{
   box-shadow: 0 0.125rem 0.5rem 0.125rem rgba(0, 0, 0, 0.5);
  }
  .teamsimg{
+     display: block;
   width: 100%; 
-  height: 15.625rem;
+  height: 80%;
   border-top-left-radius: 0.313rem;
   border-top-right-radius: 0.313rem;
   transition: opacity 600ms;
   cursor: pointer;
+      object-fit: fill;
+    margin: 0 auto
  }
  .teamnames{
   font-size: 1.25rem;
@@ -266,12 +276,14 @@ nav li a:hover{
   padding: 10px;
 }
  .galeryimg{
-  max-width: 100%;
-  margin: 5px auto;
+  width: 100%;
+  height: auto;
+  margin: 6px auto;
   border-radius: 0.313rem;
   opacity: 0.6;
   transition: all 600ms;
   box-shadow: 0 0.125rem 0.5rem 0.125rem rgba(0, 0, 0, 0.5);
+  object-fit: contain;
  }
  .galeryimg:hover{
   opacity: 1;
@@ -363,15 +375,21 @@ nav li a:hover{
   transition: all 0.8s ease;
   border-radius: 25px;
 }
+
+/* Cellphone screens */
 @media screen and (max-width: 500px) {
  .address{
   width: 95%;
   margin:2% auto;
  }
+ body{
+   overflow-x: hidden;
+ }
  iframe{
   width: 95%;
   margin:2% auto;
  }
+
  nav{
   width: 100%;
   margin-bottom: 10px;
@@ -414,6 +432,7 @@ nav li a:hover{
 }
  .infimg{
    opacity: 1;
+   width: 100%;
  }
 #container{
   width: 90%;
@@ -422,6 +441,7 @@ nav li a:hover{
 .content{
   margin: 1%;
   object-fit: contain;
+  width: 98%;
 }
 .content a{
   margin: 2px auto;
@@ -444,6 +464,7 @@ nav li a:hover{
   padding: 8px;
 }
 }
+/*Tablet screens*/
 @media screen and (min-width: 500px) and (max-width: 900px) {
 .social {
   display:inline-block;
@@ -470,6 +491,7 @@ nav{
  }
  .infimg{
    opacity: 1;
+   width: 100%;
  }
  .teams{ 
   flex: 44%;
